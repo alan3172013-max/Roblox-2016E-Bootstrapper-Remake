@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition="'$(Configuration)' == ''">Debug</Configuration>
+    <Platform Condition="'$(Platform)' == ''">Win32</Platform>
+    <ProjectGuid>{YOUR-GUID-HERE}</ProjectGuid>
+    <OutputType>Executable</OutputType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="other_source.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Link Include="your_linker_options" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\Microsoft.CSharp.targets" />
+</Project>
